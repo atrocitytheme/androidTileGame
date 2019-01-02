@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tests.slidingtiles">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="project.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="project.slidinggames.view.StartingActivity" />
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <activity android:name="project.slidinggames.view.GameActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="project.GameCenterActivity" />
+        <activity android:name="project.slidinggames.view.ScoreBoardActivity" />
+        <activity android:name="project.slidinggames.view.TileSettingsActivity" />
+        <activity android:name="project.slidinggames.view.PersonalScoreBoardActivity" />
+        <activity android:name="project.RegisterActivity" />
+        <activity android:name="project.slidinggames.view.FinalScoreActivity" />
+        <activity android:name="project.ProfileActivity" />
+        <activity android:name="project.tfgames.view.StartingActivityTF" />
+        <activity android:name="project.tfgames.view.GameActivityTF" />
+        <activity android:name="project.sudokugames.view.GameActivitySudoku" />
+        <activity android:name="project.sudokugames.view.StartingActivitySudoku" />
+        <activity android:name="project.tfgames.view.FinalScoreTFActivity" />
+        <activity android:name="project.tfgames.view.YouLoseTFActivity" />
+        <activity android:name="project.sudokugames.view.FinalScoreSKActivity" />
+        <activity
+            android:name="project.BasicScoreBoardActivity"
+            android:label="@string/title_activity_basic_score_board"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="project.tfgames.view.ScoreboardtfActivity"
+            android:label="@string/title_activity_scoreboardtf"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="project.sudokugames.view.ScoreBoardActivitySK"
+            android:label="@string/title_activity_score_board_sk"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="project.BasicFinalScoreActivity" />
+        <activity android:name="project.BasicStartingActivity"></activity>
+    </application>
+
+</manifest>
